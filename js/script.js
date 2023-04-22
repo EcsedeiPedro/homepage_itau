@@ -1,11 +1,23 @@
-//open mobile menu
-let menuToggle = document.getElementById("js-menu-toggle");
-let primaryMenu = document.getElementById("js-open-menu-toggle");
+// declaração das variáveis do menu mobile
+const menuToggle = document.getElementById("js-menu-toggle");
+const primaryMenu = document.getElementById("js-open-menu-toggle");
+const accessibilityMenu = document.getElementById("js-accessibility-menu-open");
 
+// função que adiciona ou remove a classe active dos elementos
 menuToggle.addEventListener('click', function() {
   primaryMenu.classList.toggle('active');
   menuToggle.classList.toggle('active');
+  accessibilityMenu.classList.toggle('active');
 });
+
+// função que obriga o menu mobile fechar caso a tela seja maior que 1200px
+document.body.onresize = function () {
+  if (document.body.clientWidth >= 1200) {
+    primaryMenu.classList.remove("active");
+    menuToggle.classList.remove("active");
+    accessibilityMenu.classList.remove("active");
+  }
+};
 
 //slick function
 
