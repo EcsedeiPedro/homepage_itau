@@ -21,11 +21,11 @@
 <body>
     
 <header>
-
+    <!-- menu de acessibilidade -->
     <div class="top-menu">
 
         <div class="container">
-
+            <!-- opção de pessoa física, corporativa ou jurídica -->
             <div class="options">
 
                 <button class="type">
@@ -43,7 +43,7 @@
             </div>
 
             <div class="accessibility">
-
+                <!-- controles de acessibilidade -->
                 <div class="item">
                     <span>A- | A+</span>
                 </div>
@@ -63,11 +63,11 @@
         </div>
 
     </div>
-
+    <!-- menu de navegação -->
     <div class="bottom-menu">
 
         <div class="container">
-
+            <!-- logo -->
             <a href="#" class="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="286" height="27" viewBox="0 0 286 27" fill="none">
                     <path d="M4.66774 0.632179H21.5771C23.9141 0.632179 25.8051 2.52981 25.8051 4.86633V21.7951C25.8051 24.1315 23.9141 26.0245 21.5771 26.0245H4.66774C2.32945 26.0245 0.438477 24.1315 0.438477 21.7951V4.86633C0.438477 2.52981 2.32945 0.632179 4.66774 0.632179Z" fill="#1A252F"/>
@@ -92,7 +92,7 @@
                     <path d="M283.079 22.3234C281.902 22.3234 281 21.9918 280.37 21.3283C279.74 20.6652 279.426 19.6702 279.426 18.3431V10.9798H277.363V9.26322H279.426V6.00444H281.613V9.26322H284.719V10.9798H281.613V18.2935C281.613 18.9569 281.741 19.4917 281.998 19.8979C282.255 20.3046 282.665 20.5074 283.228 20.5074C283.642 20.5074 284.007 20.4576 284.322 20.3581C284.636 20.2586 284.901 20.1343 285.117 19.985V21.7761C284.901 21.9254 284.616 22.054 284.26 22.1616C283.903 22.2693 283.51 22.3234 283.079 22.3234Z" fill="#1A252F"/>
                 </svg>
             </a>
-
+            <!-- menu primário do site -->
             <nav class="menu">
 
                 <ul class="primary-menu" id="js-open-menu-toggle">
@@ -157,17 +157,24 @@
 
                     </li>
 
+                    <form class="mobile-search" action="">
+                        <label for="">
+                            <input type="text" placeholder="enter your search">
+                        </label>
+                    </form>
+
                 </ul>
-
+                <!-- campo de busca do site -->
                 <div class="right">
-
+                    <!-- botão para abrir menu mobile -->
                     <div class="menu-toggle" id="js-menu-toggle">
                         <div></div>
                     </div>
-
+                    <!-- campo de busca -->
                     <form>
-                        <input class="submit" type="submit" value="">
-                        <input class="search" type="text" id="query" name="query" placeholder="enter your search"/>
+                        <label for="">
+                            <input class="search" type="text" id="query" name="query" placeholder="enter your search"/>
+                        </label>
                     </form>
 
                 </div>
@@ -183,9 +190,9 @@
 </header>
 
 <main>
-
+    <!-- banner da parte principal do site -->
     <section class="banner">
-
+        <!-- carrossel automático do site -->
         <div class="autoplay">
 
             <div class="autoplay-item" style="background-image: url(./images/banner.png);">
@@ -271,7 +278,7 @@
         </div>
 
     </section>
-
+    <!-- seção quem somos -->
     <section class="who-we-are">
 
         <div class="container">
@@ -394,7 +401,9 @@
 <footer>
 
     <div class="footer-top">
+
         <div class="container">
+
             <img class="white-logo" src="./images/white-logo.png" alt="">
 
             <div class="social">
@@ -405,10 +414,40 @@
                 <a href="#" class="social-media"><img src="./images/facebook.png" alt=""></a>
                 <a href="#" class="social-media"><img src="./images/twitter.png" alt=""></a>
             </div>
+
         </div>
+
     </div>
 
-    <div class="footer-menu">
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <ul class="footer-menu">
+                <li class="item"><a href="#">ABOUT US</a></li>
+                <li class="item"><a href="#">HISTORY</a></li>
+                <li class="item"><a href="#">PHILOSOPHY</a></li>
+
+                <li class="item">
+                    <a href="#">STRATEGIES</a>
+
+                    <ul class="submenu">
+                        <li><a href="#">asset management</a></li>
+                        <li><a href="#">portfolio solutions</a></li>
+                        <li><a href="#">fund of funds</a></li>
+                    </ul>
+                </li>
+
+                <li class="item"><a href="#">CONTACT</a></li>
+            </ul>
+
+            <p class="small-text">Powered by Ecsedev</p>
+
+            <hr>
+
+            <p class="small-text">This is an Itaú Unibanco Asset Management Ltda. ("IAM") website. IAM is a financial institution duly incorporated under the laws of the Federative Republic of Brazil. IAM is an affiliate of Itaú USA Asset Management Inc. (“IUAM”), the entity within Itaú Unibanco’s conglomerate registered as an investment adviser with the U.S. Securities and Exchange Commission (“SEC”). SEC regulations are applicable only to clients, prospects, and investors of IUAM.</p>
+
+        </div>
 
     </div>
     

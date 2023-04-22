@@ -1,3 +1,4 @@
+//open mobile menu
 let menuToggle = document.getElementById("js-menu-toggle");
 let primaryMenu = document.getElementById("js-open-menu-toggle");
 
@@ -27,15 +28,25 @@ $(".multiple-items").slick({
       breakpoint: 1200,
       settings: {
         centerMode: true,
-        centerPadding: "20px",
+        centerPadding: "60px",
         slidesToShow: 2,
       },
     },
     {
       breakpoint: 870,
       settings: {
+        centerMode: true,
+        centerPadding: "30px",
         slidesToShow: 1,
       },
     },
+    {
+      breakpoint: 540,
+      settings: {
+        centerMode: true,
+        centerPadding: "10px",
+        slidesToShow: 1,
+      }
+    }
   ],
 });
