@@ -109,8 +109,7 @@ header {
           .item {
             position: relative;
 
-            a {
-              color: $primary-color;
+            .text {
               padding-bottom: 32px;
               transition: 0.4s;
             }
@@ -226,8 +225,8 @@ header {
                 width: 100%;
                 padding: {
                   left: 10px;
-                  top: 6px;
-                  bottom: 6px;
+                  top: 10px;
+                  bottom: 10px;
                   right: 10px;
                 }
                 background-color: white;

@@ -1,0 +1,40 @@
+==Release notes for Itau Display Pro==
+
+Compiler of release notes: Dalton Maag
+Designer: Dalton Maag
+Designer URL: daltonmaag.com
+
+Release date: 2021-04-30
+
+Change log:
+- v1.101:
+Itau Display renamed to Itau Display Pro.
+
+- v1.100:
+Modified diagonal letterforms in 65 glyphs by client request.
+Modified percent.
+Added idigital icon to all weights.
+
+- v1.000:
+This is the first release
+Text and Display fonts share the same vertical metrics.
+ItauDisplay_He.ttf os2_weight_class manually adjusted to 850.
+
+
+Basic information
+1 Font name: Itau Display Pro
+2 TrueType Version record: 1.101
+3 Character set : Western European
+4 Supported scripts: Latin
+5 Number of glyphs: 333
+6 Weights/Styles: Light, Regular, Bold, ExtraBold, Heavy, Black
+7 Usage: Display
+
+Technology
+1 File formats: The files have been delivered in the TrueType-based OpenType format, for use in all major Operating Systems, and also as TTF for use in apps, and in web font format: WOFF; WOFF2; EOT.
+2 Embedding settings: Editing of the document is allowed (editable mode), subsetting is allowed.
+3 Screen optimization information: All glyphs are manually hinted for optimized rasterization in Microsoft ClearType or for other LCD devices.
+4 Default numerals: Proportional. Tabular figures accessible via OpenType features.
+
+Other information
+The idigital icon is accessible via the OpenType feature "Contextual Alternate" by typing: idigital

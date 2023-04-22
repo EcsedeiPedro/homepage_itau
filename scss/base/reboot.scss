@@ -17,7 +17,8 @@ img {
   max-width: 100%;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -43,11 +44,27 @@ body {
   }
 }
 
+.accessibility-item {
+  font-family: "Itau Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.nav-item-menu {
+  color: #000;
+  font-family: "Itau Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 h1 {
   color: white;
   font-size: 40px;
   font-weight: 700;
   line-height: 55.34px;
+  font-family: "Itau Text Pro";
 
   @media (max-width: 1199px) {
     font-size: 30px;
@@ -59,15 +76,15 @@ h2 {
   color: $primary-color;
   font-size: 43px;
   font-weight: 700;
-  letter-spacing: 3px;
+  
 
   @media (max-width: 1199px) {
-    
   }
 }
 
 h3 {
   color: $primary-color;
+  font-family: "Itau Text Pro";
   font-size: 43px;
   font-weight: 300;
   line-height: 55px;
@@ -83,6 +100,7 @@ h4 {
   font-size: 40px;
   font-weight: 300;
   line-height: 33.5px;
+  font-family: "Itau Text Pro";
 
   @media (max-width: 1199px) {
     line-height: 50px;
@@ -96,7 +114,6 @@ h4 {
   line-height: 15.6px;
 
   @media (max-width: 1199px) {
-    
   }
 }
 
@@ -105,6 +122,7 @@ h4 {
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
+  font-family: "Itau Text Pro";
 
   @media (max-width: 1199px) {
     line-height: 20px;
@@ -116,24 +134,25 @@ h4 {
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
+  font-family: "Itau Text Pro";
 
   @media (max-width: 1199px) {
-    
   }
 }
 
 .medium-text {
   color: $primary-color;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 28px;
   font-size: 20px;
+  font-family: "Itau Text Pro";
 
   @media (max-width: 1199px) {
-    
   }
 }
 
 .orange-title {
+  font-family: "Itau Display Pro";
   display: flex;
   color: $secondary-color;
   font-size: 18px;
@@ -141,7 +160,6 @@ h4 {
   line-height: 21.88px;
 
   @media (max-width: 1199px) {
-    
   }
 }
 
@@ -150,10 +168,15 @@ hr {
   border: 1px solid $secondary-color;
 }
 
+.see-more {
+  font-family: "Itau Text Pro";
+  font-size: 12px;
+  font-weight:  700;
+}
+
 .title-hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 211px;
 }
-

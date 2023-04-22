@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Itau Text Pro";
+  src: url("./itau_text_pro/desktop/ItauTextPro_Lt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Itau Text Pro";
+  src: url("./itau_text_pro/desktop/ItauTextPro_Rg.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Itau Text Pro";
+  src: url("./itau_text_pro/desktop/ItauTextPro_Bd.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Itau Display Pro";
+  src: url("./itau_display_pro/Desktop/ItauDisplayPro_Bd.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+

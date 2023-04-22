@@ -17,7 +17,8 @@ img {
   max-width: 100%;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -45,11 +46,27 @@ body {
   }
 }
 
+.accessibility-item {
+  font-family: "Itau Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.nav-item-menu {
+  color: #000;
+  font-family: "Itau Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 h1 {
   color: white;
   font-size: 40px;
   font-weight: 700;
   line-height: 55.34px;
+  font-family: "Itau Text Pro";
 }
 @media (max-width: 1199px) {
   h1 {
@@ -62,10 +79,10 @@ h2 {
   color: #161F27;
   font-size: 43px;
   font-weight: 700;
-  letter-spacing: 3px;
 }
 h3 {
   color: #161F27;
+  font-family: "Itau Text Pro";
   font-size: 43px;
   font-weight: 300;
   line-height: 55px;
@@ -82,6 +99,7 @@ h4 {
   font-size: 40px;
   font-weight: 300;
   line-height: 33.5px;
+  font-family: "Itau Text Pro";
 }
 @media (max-width: 1199px) {
   h4 {
@@ -100,6 +118,7 @@ h4 {
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
+  font-family: "Itau Text Pro";
 }
 @media (max-width: 1199px) {
   .small-text {
@@ -112,14 +131,17 @@ h4 {
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
+  font-family: "Itau Text Pro";
 }
 .medium-text {
   color: #161F27;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 28px;
   font-size: 20px;
+  font-family: "Itau Text Pro";
 }
 .orange-title {
+  font-family: "Itau Display Pro";
   display: flex;
   color: #F25722;
   font-size: 18px;
@@ -129,6 +151,12 @@ h4 {
 hr {
   width: 91px;
   border: 1px solid #F25722;
+}
+
+.see-more {
+  font-family: "Itau Text Pro";
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .title-hr {
@@ -231,8 +259,7 @@ header .bottom-menu .container .menu .primary-menu > li + li, header .bottom-men
 header .bottom-menu .container .menu .primary-menu .item, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .item, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .item {
   position: relative;
 }
-header .bottom-menu .container .menu .primary-menu .item a, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .item a, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .item a {
-  color: #161F27;
+header .bottom-menu .container .menu .primary-menu .item .text, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .item .text, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .item .text {
   padding-bottom: 32px;
   transition: 0.4s;
 }
@@ -323,13 +350,13 @@ header .bottom-menu .container .menu .primary-menu .mobile-search label::after, 
   right: 10px;
   width: 17px;
   height: 17px;
-  background-image: url(../images/search.png);
+  background-image: url(../../images/search.png);
 }
 header .bottom-menu .container .menu .primary-menu .mobile-search label input, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .mobile-search label input, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .mobile-search label input {
   width: 100%;
   padding-left: 10px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 10px;
   background-color: white;
   border: 0;
@@ -416,7 +443,7 @@ header .bottom-menu .container .menu .right form label::after, header .bottom-me
   right: 10px;
   width: 17px;
   height: 17px;
-  background-image: url(../images/search.png);
+  background-image: url(../../images/search.png);
 }
 header .bottom-menu .container .menu .right form label input, header .bottom-menu main .banner .autoplay .slick-dots .menu .right form label input, main .banner .autoplay header .bottom-menu .slick-dots .menu .right form label input {
   width: 100%;
@@ -449,35 +476,26 @@ main .banner .autoplay .autoplay-item .container h1, main .banner .autoplay .aut
   margin-top: 70px;
 }
 main .banner .autoplay .autoplay-item .container .box, main .banner .autoplay .autoplay-item .slick-dots .box {
-  width: 420px;
-  height: 96px;
+  width: 250px;
   border-radius: 10px;
   display: flex;
+  padding: 20px 15px;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.2);
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   margin-top: 90px;
-}
-@media (max-width: 786px) {
-  main .banner .autoplay .autoplay-item .container .box, main .banner .autoplay .autoplay-item .slick-dots .box {
-    width: auto;
-    height: auto;
-  }
 }
 main .banner .autoplay .autoplay-item .container .box .box-text, main .banner .autoplay .autoplay-item .slick-dots .box .box-text {
   width: 80%;
 }
 main .banner .autoplay .autoplay-item .container .box .box-text .medium-text, main .banner .autoplay .autoplay-item .slick-dots .box .box-text .medium-text {
+  margin: 0;
   color: white;
 }
 main .banner .autoplay .autoplay-item .container .box .arrow, main .banner .autoplay .autoplay-item .slick-dots .box .arrow {
   padding-left: 23px;
-  width: 20%;
 }
 main .banner .autoplay .slick-dots {
+  height: 50px;
   left: 50% !important;
   transform: translateX(-50%);
   top: 40%;
@@ -552,7 +570,7 @@ main .picture-and-text .disclaimer {
 main .picture-and-text .btn {
   background-color: #F25722;
   border: #F25722;
-  --bs-btn-padding-y: 0.3rem;
+  --bs-btn-padding-y: 0.6rem;
   --bs-btn-padding-x: 2rem;
   border-radius: 5px;
   display: flex;
@@ -587,25 +605,26 @@ main .products {
     padding-top: 50px;
   }
 }
-main .products .container .link, main .products .banner .autoplay .slick-dots .link, main .banner .autoplay .products .slick-dots .link {
+main .products .container .row .link, main .products .banner .autoplay .slick-dots .row .link, main .banner .autoplay .products .slick-dots .row .link {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   transition: 0.5s;
 }
 @media (max-width: 1199px) {
-  main .products .container .link, main .products .banner .autoplay .slick-dots .link, main .banner .autoplay .products .slick-dots .link {
+  main .products .container .row .link, main .products .banner .autoplay .slick-dots .row .link, main .banner .autoplay .products .slick-dots .row .link {
     justify-content: left;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
-main .products .container .link .see-more, main .products .banner .autoplay .slick-dots .link .see-more, main .banner .autoplay .products .slick-dots .link .see-more {
+main .products .container .row .see-more, main .products .banner .autoplay .slick-dots .row .see-more, main .banner .autoplay .products .slick-dots .row .see-more {
   color: #F25722;
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
 }
-main .products .container .link .orange-btn, main .products .banner .autoplay .slick-dots .link .orange-btn, main .banner .autoplay .products .slick-dots .link .orange-btn {
+main .products .container .row .orange-btn, main .products .banner .autoplay .slick-dots .row .orange-btn, main .banner .autoplay .products .slick-dots .row .orange-btn {
   margin-left: 16px;
 }
 main .cards .slick-prev::before,
@@ -662,7 +681,7 @@ main .cards .card-item small::after {
   width: 11px;
   height: 8px;
   margin-left: 6px;
-  background-image: url(../images/small-arrow.png);
+  background-image: url(../../images/small-arrow.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -723,6 +742,9 @@ footer .footer-bottom .container .footer-menu .item a, footer .footer-bottom mai
 footer .footer-bottom .container .footer-menu .item .submenu, footer .footer-bottom main .banner .autoplay .slick-dots .footer-menu .item .submenu, main .banner .autoplay footer .footer-bottom .slick-dots .footer-menu .item .submenu {
   padding-left: 0;
   padding-top: 9px;
+}
+footer .footer-bottom .container .footer-menu .item .submenu .small-text, footer .footer-bottom main .banner .autoplay .slick-dots .footer-menu .item .submenu .small-text, main .banner .autoplay footer .footer-bottom .slick-dots .footer-menu .item .submenu .small-text {
+  font-weight: 300;
 }
 footer .footer-bottom .container .small-text, footer .footer-bottom main .banner .autoplay .slick-dots .small-text, main .banner .autoplay footer .footer-bottom .slick-dots .small-text {
   padding-top: 22px;

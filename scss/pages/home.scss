@@ -23,36 +23,25 @@ main {
           }
 
           .box {
-            width: 420px;
-            height: 96px;
+            width: 250px;
             border-radius: 10px;
             display: flex;
+            padding: 20px 15px;
             align-items: center;
             background-color: rgba(255, 255, 255, 20%);
-            padding: {
-              left: 32px;
-              right: 32px;
-              top: 20px;
-              bottom: 20px;
-            }
             margin-top: 90px;
-
-            @media (max-width: 786px) {
-              width: auto;
-              height: auto;
-            }
 
             .box-text {
               width: 80%;
 
               .medium-text {
+                margin: 0;
                 color: white;
               }
             }
 
             .arrow {
               padding-left: 23px;
-              width: 20%;
             }
           }
         }
@@ -60,6 +49,7 @@ main {
 
       .slick-dots {
         @extend .container;
+        height: 50px;
         left: 50% !important;
         transform: translateX(-50%);
         top: 40%;
@@ -148,7 +138,7 @@ main {
     .btn {
       background-color: $secondary-color;
       border: $secondary-color;
-      --bs-btn-padding-y: 0.3rem;
+      --bs-btn-padding-y: 0.6rem;
       --bs-btn-padding-x: 2rem;
       border-radius: 5px;
       display: flex;
@@ -191,16 +181,20 @@ main {
     }
 
     .container {
-      .link {
-        display: flex;
-        justify-content: flex-end;
-        transition: 0.5s;
 
-        @media (max-width: 1199px) {
-          justify-content: left;
-          padding: {
-            top: 20px;
-            bottom: 20px;
+      .row {
+        .link {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          transition: 0.5s;
+          
+          @media (max-width: 1199px) {
+            justify-content: left;
+            padding: {
+              top: 20px;
+              bottom: 20px;
+            }
           }
         }
 
