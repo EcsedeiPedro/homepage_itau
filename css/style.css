@@ -1,0 +1,667 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container, main .banner .autoplay .slick-dots {
+  --bs-gutter-x: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1365px) {
+  .container, main .banner .autoplay .slick-dots {
+    max-width: 90%;
+  }
+}
+@media (max-width: 1199px) {
+  .container, main .banner .autoplay .slick-dots {
+    max-width: 80%;
+  }
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 55.34px;
+}
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+
+h2 {
+  color: #161F27;
+  font-size: 43px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+h3 {
+  color: #161F27;
+  font-size: 43px;
+  font-weight: 300;
+  line-height: 55px;
+  letter-spacing: 3px;
+}
+@media (max-width: 1199px) {
+  h3 {
+    font-size: 38px;
+  }
+}
+
+h4 {
+  color: black;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 33.5px;
+}
+@media (max-width: 1199px) {
+  h4 {
+    line-height: 50px;
+  }
+}
+
+.xsmall-text {
+  color: #161F27;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+.small-text {
+  color: #161F27;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+@media (max-width: 1199px) {
+  .small-text {
+    line-height: 20px;
+  }
+}
+
+.text {
+  color: #161F27;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+.medium-text {
+  color: #161F27;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 20px;
+}
+.orange-title {
+  display: flex;
+  color: #F25722;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.88px;
+}
+hr {
+  width: 91px;
+  border: 1px solid #F25722;
+}
+
+.title-hr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 211px;
+}
+
+header {
+  width: 100%;
+}
+header .top-menu {
+  background-color: #161F27;
+}
+@media (max-width: 1199px) {
+  header .top-menu {
+    display: none;
+  }
+}
+header .top-menu .container, header .top-menu main .banner .autoplay .slick-dots, main .banner .autoplay header .top-menu .slick-dots {
+  height: 48px;
+  display: flex;
+}
+header .top-menu .container .options, header .top-menu main .banner .autoplay .slick-dots .options, main .banner .autoplay header .top-menu .slick-dots .options {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+header .top-menu .container .options button, header .top-menu main .banner .autoplay .slick-dots .options button, main .banner .autoplay header .top-menu .slick-dots .options button {
+  border: 0;
+  background-color: transparent;
+}
+header .top-menu .container .options .type, header .top-menu main .banner .autoplay .slick-dots .options .type, main .banner .autoplay header .top-menu .slick-dots .options .type {
+  cursor: pointer;
+  transition: 0.5s;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+header .top-menu .container .options .type a, header .top-menu main .banner .autoplay .slick-dots .options .type a, main .banner .autoplay header .top-menu .slick-dots .options .type a {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+header .top-menu .container .options .type:hover, header .top-menu main .banner .autoplay .slick-dots .options .type:hover, main .banner .autoplay header .top-menu .slick-dots .options .type:hover {
+  background-color: #F25722;
+}
+header .top-menu .container .accessibility, header .top-menu main .banner .autoplay .slick-dots .accessibility, main .banner .autoplay header .top-menu .slick-dots .accessibility {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .top-menu .container .accessibility .item, header .top-menu main .banner .autoplay .slick-dots .accessibility .item, main .banner .autoplay header .top-menu .slick-dots .accessibility .item {
+  display: flex;
+  align-items: center;
+}
+header .top-menu .container .accessibility .item + .item, header .top-menu main .banner .autoplay .slick-dots .accessibility .item + .item, main .banner .autoplay header .top-menu .slick-dots .accessibility .item + .item {
+  margin-left: 18px;
+}
+header .top-menu .container .accessibility .item + .item span, header .top-menu main .banner .autoplay .slick-dots .accessibility .item + .item span, main .banner .autoplay header .top-menu .slick-dots .accessibility .item + .item span {
+  margin-left: 18px;
+}
+header .top-menu .container .accessibility .item span, header .top-menu main .banner .autoplay .slick-dots .accessibility .item span, main .banner .autoplay header .top-menu .slick-dots .accessibility .item span {
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+}
+header .bottom-menu {
+  width: 100%;
+}
+header .bottom-menu .container, header .bottom-menu main .banner .autoplay .slick-dots, main .banner .autoplay header .bottom-menu .slick-dots {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 760px) {
+  header .bottom-menu .container .logo svg, header .bottom-menu main .banner .autoplay .slick-dots .logo svg, main .banner .autoplay header .bottom-menu .slick-dots .logo svg {
+    width: 70%;
+  }
+}
+header .bottom-menu .container .menu, header .bottom-menu main .banner .autoplay .slick-dots .menu, main .banner .autoplay header .bottom-menu .slick-dots .menu {
+  display: flex;
+  justify-content: flex-end;
+}
+header .bottom-menu .container .menu .primary-menu, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+header .bottom-menu .container .menu .primary-menu > li + li, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu > li + li, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu > li + li {
+  margin-left: 52px;
+}
+header .bottom-menu .container .menu .primary-menu .item, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .item, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .item {
+  position: relative;
+}
+header .bottom-menu .container .menu .primary-menu .item a, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .item a, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .item a {
+  color: #161F27;
+  padding-bottom: 32px;
+  transition: 0.4s;
+}
+header .bottom-menu .container .menu .primary-menu .item:hover a, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .item:hover a, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .item:hover a {
+  color: #F25722;
+}
+header .bottom-menu .container .menu .primary-menu .item:hover .submenu, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .item:hover .submenu, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .item:hover .submenu {
+  opacity: 1;
+  z-index: 999;
+}
+header .bottom-menu .container .menu .primary-menu .item .submenu, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .item .submenu, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .item .submenu {
+  border-top: 2px solid #F25722;
+  transition: 0.4s;
+  opacity: 0;
+  position: absolute;
+  top: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 40px;
+  background-color: #161F27;
+}
+header .bottom-menu .container .menu .primary-menu .item .submenu li, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .item .submenu li, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .item .submenu li {
+  width: 100%;
+}
+header .bottom-menu .container .menu .primary-menu .item .submenu li + li, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .item .submenu li + li, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .item .submenu li + li {
+  margin-top: 18px;
+}
+header .bottom-menu .container .menu .primary-menu .item .submenu a, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu .item .submenu a, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu .item .submenu a {
+  color: white;
+}
+@media (max-width: 1199px) {
+  header .bottom-menu .container .menu .primary-menu, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu {
+    position: fixed;
+    left: -2000px;
+  }
+  header .bottom-menu .container .menu .primary-menu.active, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu.active, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu.active {
+    padding: 50px;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+  header .bottom-menu .container .menu .primary-menu.active .item, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu.active .item, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu.active .item {
+    width: 100%;
+  }
+  header .bottom-menu .container .menu .primary-menu.active > li, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu.active > li, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu.active > li {
+    margin: 0;
+  }
+  header .bottom-menu .container .menu .primary-menu.active > li a, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu.active > li a, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu.active > li a {
+    color: #F25722;
+  }
+  header .bottom-menu .container .menu .primary-menu.active .submenu, header .bottom-menu main .banner .autoplay .slick-dots .menu .primary-menu.active .submenu, main .banner .autoplay header .bottom-menu .slick-dots .menu .primary-menu.active .submenu {
+    margin-top: 10px;
+    opacity: 1;
+    position: initial;
+    left: 0;
+    transform: translateX(0);
+    background-color: transparent;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 0;
+  }
+}
+header .bottom-menu .container .menu .right, header .bottom-menu main .banner .autoplay .slick-dots .menu .right, main .banner .autoplay header .bottom-menu .slick-dots .menu .right {
+  display: flex;
+  align-items: center;
+}
+header .bottom-menu .container .menu .right .menu-toggle, header .bottom-menu main .banner .autoplay .slick-dots .menu .right .menu-toggle, main .banner .autoplay header .bottom-menu .slick-dots .menu .right .menu-toggle {
+  cursor: pointer;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+  transition: 0.5s;
+}
+@media (min-width: 1200px) {
+  header .bottom-menu .container .menu .right .menu-toggle, header .bottom-menu main .banner .autoplay .slick-dots .menu .right .menu-toggle, main .banner .autoplay header .bottom-menu .slick-dots .menu .right .menu-toggle {
+    display: none;
+  }
+}
+header .bottom-menu .container .menu .right .menu-toggle::before, header .bottom-menu main .banner .autoplay .slick-dots .menu .right .menu-toggle::before, main .banner .autoplay header .bottom-menu .slick-dots .menu .right .menu-toggle::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #161F27;
+  position: relative;
+  top: 0px;
+  transition: 0.5s;
+}
+header .bottom-menu .container .menu .right .menu-toggle div, header .bottom-menu main .banner .autoplay .slick-dots .menu .right .menu-toggle div, main .banner .autoplay header .bottom-menu .slick-dots .menu .right .menu-toggle div {
+  width: 25px;
+  height: 2px;
+  background-color: #161F27;
+  transition: 0.1s;
+}
+header .bottom-menu .container .menu .right .menu-toggle::after, header .bottom-menu main .banner .autoplay .slick-dots .menu .right .menu-toggle::after, main .banner .autoplay header .bottom-menu .slick-dots .menu .right .menu-toggle::after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #161F27;
+  position: relative;
+  bottom: 0;
+  transition: 0.5s;
+}
+header .bottom-menu .container .menu .right .menu-toggle.active, header .bottom-menu main .banner .autoplay .slick-dots .menu .right .menu-toggle.active, main .banner .autoplay header .bottom-menu .slick-dots .menu .right .menu-toggle.active {
+  position: fixed;
+  right: 9%;
+}
+header .bottom-menu .container .menu .right .menu-toggle.active div, header .bottom-menu main .banner .autoplay .slick-dots .menu .right .menu-toggle.active div, main .banner .autoplay header .bottom-menu .slick-dots .menu .right .menu-toggle.active div {
+  visibility: hidden;
+}
+header .bottom-menu .container .menu .right .menu-toggle.active::before, header .bottom-menu main .banner .autoplay .slick-dots .menu .right .menu-toggle.active::before, main .banner .autoplay header .bottom-menu .slick-dots .menu .right .menu-toggle.active::before {
+  background-color: white;
+  transform: rotate(50deg) translateY(10px);
+}
+header .bottom-menu .container .menu .right .menu-toggle.active::after, header .bottom-menu main .banner .autoplay .slick-dots .menu .right .menu-toggle.active::after, main .banner .autoplay header .bottom-menu .slick-dots .menu .right .menu-toggle.active::after {
+  background-color: white;
+  transform: rotate(-50deg) translateY(-10px);
+}
+header .bottom-menu .container .menu .right form, header .bottom-menu main .banner .autoplay .slick-dots .menu .right form, main .banner .autoplay header .bottom-menu .slick-dots .menu .right form {
+  width: 190px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  background-color: #ededed;
+  outline: 0;
+  padding: 10px 18px;
+  border-radius: 10px;
+}
+@media (max-width: 760px) {
+  header .bottom-menu .container .menu .right form, header .bottom-menu main .banner .autoplay .slick-dots .menu .right form, main .banner .autoplay header .bottom-menu .slick-dots .menu .right form {
+    display: none;
+  }
+}
+header .bottom-menu .container .menu .right form .submit, header .bottom-menu main .banner .autoplay .slick-dots .menu .right form .submit, main .banner .autoplay header .bottom-menu .slick-dots .menu .right form .submit {
+  width: 17px;
+  height: 17px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.7s;
+  background-image: url(../../images/search.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+header .bottom-menu .container .menu .right form .submit:hover, header .bottom-menu main .banner .autoplay .slick-dots .menu .right form .submit:hover, main .banner .autoplay header .bottom-menu .slick-dots .menu .right form .submit:hover {
+  opacity: 0.7;
+}
+header .bottom-menu .container .menu .right form .search, header .bottom-menu main .banner .autoplay .slick-dots .menu .right form .search, main .banner .autoplay header .bottom-menu .slick-dots .menu .right form .search {
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  width: 110px;
+  margin-left: 20px;
+}
+
+main .banner {
+  height: 500px;
+  position: relative;
+}
+main .banner .autoplay {
+  height: 100%;
+}
+main .banner .autoplay-item {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+main .banner .autoplay .autoplay-item .container h1, main .banner .autoplay .autoplay-item .slick-dots h1 {
+  margin-top: 70px;
+}
+main .banner .autoplay .autoplay-item .container .box, main .banner .autoplay .autoplay-item .slick-dots .box {
+  width: 420px;
+  height: 96px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 90px;
+}
+@media (max-width: 786px) {
+  main .banner .autoplay .autoplay-item .container .box, main .banner .autoplay .autoplay-item .slick-dots .box {
+    width: auto;
+    height: auto;
+  }
+}
+main .banner .autoplay .autoplay-item .container .box .box-text, main .banner .autoplay .autoplay-item .slick-dots .box .box-text {
+  width: 80%;
+}
+main .banner .autoplay .autoplay-item .container .box .box-text .medium-text, main .banner .autoplay .autoplay-item .slick-dots .box .box-text .medium-text {
+  color: white;
+}
+main .banner .autoplay .autoplay-item .container .box .arrow, main .banner .autoplay .autoplay-item .slick-dots .box .arrow {
+  padding-left: 23px;
+  width: 20%;
+}
+main .banner .autoplay .slick-dots {
+  left: 50% !important;
+  transform: translateX(-50%);
+  top: 40%;
+  text-align: unset;
+}
+main .banner .autoplay .slick-dots li {
+  margin: 0li;
+  margin-margin-left: 9.29px;
+}
+main .banner .autoplay .slick-dots button {
+  padding: 0;
+}
+main .banner .autoplay .slick-dots button::before {
+  width: 12px;
+  height: 12px;
+  color: transparent;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+main .who-we-are {
+  padding-top: 10px;
+}
+main .who-we-are .container, main .who-we-are .banner .autoplay .slick-dots, main .banner .autoplay .who-we-are .slick-dots {
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60%;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 49px;
+  padding-bottom: 49px;
+}
+@media (max-width: 1199px) {
+  main .who-we-are .container, main .who-we-are .banner .autoplay .slick-dots, main .banner .autoplay .who-we-are .slick-dots {
+    position: initial;
+    padding: 20px 20px;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+main .who-we-are .container .xsmall-text, main .who-we-are .banner .autoplay .slick-dots .xsmall-text, main .banner .autoplay .who-we-are .slick-dots .xsmall-text {
+  margin-top: 34px;
+  text-align: end;
+}
+main .picture-and-text {
+  margin-top: 300px;
+}
+@media (max-width: 1199px) {
+  main .picture-and-text {
+    margin-top: 50px;
+  }
+}
+main .picture-and-text .container, main .picture-and-text .banner .autoplay .slick-dots, main .banner .autoplay .picture-and-text .slick-dots {
+  width: 100%;
+}
+main .picture-and-text .disclaimer {
+  margin-top: 50px;
+}
+@media (max-width: 1191px) {
+  main .picture-and-text .picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+main .picture-and-text .btn {
+  background-color: #F25722;
+  border: #F25722;
+  --bs-btn-padding-y: 0.3rem;
+  --bs-btn-padding-x: 2rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: end;
+}
+main .picture-and-text .btn:active {
+  background-color: transparent;
+  border: 1px solid #F25722;
+}
+main .picture-and-text .btn:active a {
+  color: #F25722;
+}
+main .picture-and-text .btn:hover {
+  background-color: transparent;
+  border: 1px solid #F25722;
+}
+main .picture-and-text .btn:hover a {
+  color: #F25722;
+}
+main .picture-and-text .btn a {
+  color: #fff;
+  font-weight: 700;
+}
+main .picture-and-text .btn-lg {
+  --bs-btn-font-size: 0.6rem;
+}
+main .products {
+  padding-top: 106px;
+}
+@media (max-width: 1199px) {
+  main .products {
+    padding-top: 50px;
+  }
+}
+main .products .container .link, main .products .banner .autoplay .slick-dots .link, main .banner .autoplay .products .slick-dots .link {
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.5s;
+}
+@media (max-width: 1199px) {
+  main .products .container .link, main .products .banner .autoplay .slick-dots .link, main .banner .autoplay .products .slick-dots .link {
+    justify-content: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+main .products .container .link .see-more, main .products .banner .autoplay .slick-dots .link .see-more, main .banner .autoplay .products .slick-dots .link .see-more {
+  color: #F25722;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+main .products .container .link .orange-btn, main .products .banner .autoplay .slick-dots .link .orange-btn, main .banner .autoplay .products .slick-dots .link .orange-btn {
+  margin-left: 16px;
+}
+main .cards .slick-prev::before,
+main .cards .slick-next::before {
+  color: #F25722;
+  opacity: 1;
+}
+@media (max-width: 1199px) {
+  main .cards .slick-prev::before,
+main .cards .slick-next::before {
+    display: none;
+  }
+}
+main .cards .card-item {
+  background-color: #161F27;
+  width: auto;
+  padding: 30px 27px;
+  border-radius: 6px;
+  position: relative;
+}
+main .cards .card-item::before {
+  content: "";
+  width: 8px;
+  height: 16px;
+  background-color: #F25722;
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+main .cards .card-item + .card-item {
+  margin-left: 36px;
+}
+main .cards .card-item .medium-text {
+  color: white;
+}
+main .cards .card-item .text {
+  color: white;
+  padding-top: 12px;
+}
+main .cards .card-item small {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+main .cards .card-item small:hover a {
+  color: white;
+}
+main .cards .card-item small a {
+  transition: 0.5s;
+  color: #F25722;
+}
+main .cards .card-item small::after {
+  content: "";
+  width: 11px;
+  height: 8px;
+  margin-left: 6px;
+  background-image: url(../../images/small-arrow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+footer {
+  margin-top: 80px;
+  width: 100%;
+  overflow-x: hidden;
+}
+footer .footer-top {
+  background-color: #161F27;
+  padding: 20px;
+}
+footer .footer-top .container, footer .footer-top main .banner .autoplay .slick-dots, main .banner .autoplay footer .footer-top .slick-dots {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 540px) {
+  footer .footer-top .container, footer .footer-top main .banner .autoplay .slick-dots, main .banner .autoplay footer .footer-top .slick-dots {
+    flex-direction: column;
+  }
+}
+footer .footer-top .container .social, footer .footer-top main .banner .autoplay .slick-dots .social, main .banner .autoplay footer .footer-top .slick-dots .social {
+  display: flex;
+}
+footer .footer-top .container .social .social-media + .social-media, footer .footer-top main .banner .autoplay .slick-dots .social .social-media + .social-media, main .banner .autoplay footer .footer-top .slick-dots .social .social-media + .social-media {
+  margin-left: 11px;
+}
+
+/*# sourceMappingURL=style.css.map */

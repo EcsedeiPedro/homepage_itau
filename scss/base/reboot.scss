@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  --bs-gutter-x: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 1365px) {
+    max-width: 90%;
+  }
+
+  @media (max-width: 1199px) {
+    max-width: 80%;
+  }
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 55.34px;
+
+  @media (max-width: 1199px) {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+
+h2 {
+  color: $primary-color;
+  font-size: 43px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  @media (max-width: 1199px) {
+    
+  }
+}
+
+h3 {
+  color: $primary-color;
+  font-size: 43px;
+  font-weight: 300;
+  line-height: 55px;
+  letter-spacing: 3px;
+
+  @media (max-width: 1199px) {
+    font-size: 38px;
+  }
+}
+
+h4 {
+  color: black;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 33.5px;
+
+  @media (max-width: 1199px) {
+    line-height: 50px;
+  }
+}
+
+.xsmall-text {
+  color: $primary-color;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+
+  @media (max-width: 1199px) {
+    
+  }
+}
+
+.small-text {
+  color: $primary-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @media (max-width: 1199px) {
+    line-height: 20px;
+  }
+}
+
+.text {
+  color: $primary-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+
+  @media (max-width: 1199px) {
+    
+  }
+}
+
+.medium-text {
+  color: $primary-color;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 20px;
+
+  @media (max-width: 1199px) {
+    
+  }
+}
+
+.orange-title {
+  display: flex;
+  color: $secondary-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.88px;
+
+  @media (max-width: 1199px) {
+    
+  }
+}
+
+hr {
+  width: 91px;
+  border: 1px solid $secondary-color;
+}
+
+.title-hr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 211px;
+}
+

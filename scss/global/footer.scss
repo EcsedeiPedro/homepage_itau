@@ -1,0 +1,31 @@
+footer {
+    margin-top: 80px;
+    width: 100%;
+    overflow-x: hidden;
+
+    .footer-top {
+        background-color: $primary-color;
+        padding: 20px;
+
+        .container {
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (max-width: 540px) {
+                flex-direction: column;
+            }
+
+            .social {
+                display: flex;
+
+                .social-media {
+                    + .social-media {
+                        margin-left: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
